@@ -2,42 +2,51 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Expenses chart component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
-  My balance
-  $921.48
+  <main id="container">
+    <header class="balance">
+      <div class="balance__info">
+        <h2 class="balance__title">My balance</h2>
+        <p class="balance__amount">$921.48</p>
+      </div>
+      <img class="balance__logo" src="src/images/logo.svg" alt="logo">
+    </header>
 
-  Spending - Last 7 days
+    <section class="chart">
+      <h2 class="chart__title">Spending - Last 7 days</h2>
 
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
+      <div class="chart__bars">
+        <div class="chart__bar" data-day="mon"></div>
+        <div class="chart__bar" data-day="tue"></div>
+        <div class="chart__bar" data-day="wed"></div>
+        <div class="chart__bar" data-day="thu"></div>
+        <div class="chart__bar" data-day="fri"></div>
+        <div class="chart__bar" data-day="sat"></div>
+        <div class="chart__bar" data-day="sun"></div>
+      </div>
 
-  Total this month
-  $478.33
+      <hr>
 
-  +2.4%
-  from last month
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+      <div class="summary">
+        <div class="summary__total">
+          <p class="summary__label">Total this month</p>
+          <p class="summary__amount">$478.33</p>
+        </div>
+        <div class="summary__change">
+          <p class="summary__percent">+2.4%</p>
+          <p class="summary__text">from last month</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
 </body>
 </html>

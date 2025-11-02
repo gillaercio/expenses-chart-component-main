@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url('../fonts/DMSans-VariableFont_opsz,wght.ttf') format('truetype');
+  font-display: swap;
+}
+
+:root {
+  --Red-500: hsl(10, 79%, 65%);
+  --Blue-300: hsl(186, 34%, 65%);
+
+  --Brown-950: hsl(25, 47%, 15%);
+  --Brown-400: hsl(28, 10%, 53%);
+  --Red-100: hsl(26, 66%, 93%);
+
+  --dm: 'DM Sans', sans-serif;
+  --text-lg: 700 2.4rem/120% var(--dm);
+  --text-lg-amount: 700 3rem/120% var(--dm);
+  --text-percent: 700 1.8rem/120% var(--dm);
+  --text: 400 1.5rem/120% var(--dm);
+  --text-sm: 400 1.4rem/120% var(--dm);
+}

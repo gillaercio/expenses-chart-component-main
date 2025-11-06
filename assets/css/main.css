@@ -63,6 +63,53 @@ body {
   color: var(--Brown-950);
 }
 
+.chart__bars {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 200px;
+  margin-top: 1rem;
+}
+
+.chart__bar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 30px;
+  border-radius: 5px;
+  background-color: var(--Red-500);
+  transition: height 0.3s ease;
+  cursor: pointer;
+}
+
+.chart__bar .bar__value {
+  position: absolute;
+  display: none;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-10%);
+  background-color: var(--Brown-950);
+  color: white;
+  font: var(--text-sm);
+  padding: 0.4rem 0.6rem;
+}
+
+.chart__bar .bar__label {
+  position: absolute;
+  bottom: -2rem;
+  font: var(--text-sm);
+  color: var(--Brown-400);
+}
+
+.chart__bar:hover .bar__value {
+  display: block;
+}
+
+.chart__bar:hover {
+  opacity: 0.8;
+}
+
 .divider {
   margin: 1rem 0;
   border: 0;
